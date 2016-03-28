@@ -1,0 +1,8 @@
+php_value date.timezone "Europe/London"
+
+RewriteEngine On
+RewriteBase /
+
+# remove www subdomain
+RewriteCond %{HTTP_HOST} ^www\.rocketchilli\.com [NC]
+RewriteRule	^(.*)$ http://rocketchilli.com/$1 [R=301,NC,L,QSA]

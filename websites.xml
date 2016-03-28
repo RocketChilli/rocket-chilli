@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<websites>
+	<site show="no">
+		<url>chaiandhoneysuckle.com</url>
+		<title>Chai &amp; Honeysuckle</title>
+		<shortTitle>Chai &amp; Honeysuckle</shortTitle>
+		<image>images/websites/chaiandhoneysuckle.com.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Meh.</info>
+	</site>
+	<site show="no">
+		<url>housesparrowcrafts.co.uk</url>
+		<title>House Sparrow Crafts</title>
+		<shortTitle>House Sparrow Crafts</shortTitle>
+		<role>Designer, developer and maintenance</role>
+		<info>Meh.</info>
+	</site>
+	<site show="yes">
+		<url>christinaholvey.co.uk</url>
+		<title>Christina Holvey</title>
+		<shortTitle>Christina Holvey</shortTitle>
+		<image>images/websites/christinaholvey.co.uk.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Deisgn based on previous publicity material (also by Rocket Chilli).</info>
+	</site>
+	<site show="yes">
+		<url>mikedilger.co.uk</url>
+		<title>Mike Dilger: Presenter and Naturalist</title>
+		<shortTitle>Mike Dilger</shortTitle>
+		<image>images/websites/mikedilger.co.uk.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Completely reworked to bring a fresh appearance with enhanced features.</info>
+	</site>
+	<site show="no">
+		<url>vestainteriors.com</url>
+		<title>Vesta Interiors</title>
+		<shortTitle>Vesta Interiors</shortTitle>
+		<image>images/websites/vestainteriors.com.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Designed and built from scratch to exhibit photographs in interactive slideshows.</info>
+	</site>
+	<site show="yes">
+		<url>simple-yoga.co.uk</url>
+		<title>Simple Yoga</title>
+		<shortTitle>Simple Yoga</shortTitle>
+		<image>images/websites/simple-yoga.co.uk.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Entire brand designed and built to be simple yet asthetically pleasing.</info>
+	</site>
+	<site show="yes">
+		<url>hypnotherapycentrebradfordonavon.com</url>
+		<title>Hypnotherapy Centre Bradford on Avon</title>
+		<shortTitle>Hypnotherapy Centre</shortTitle>
+		<image>images/websites/hypnotherapycentrebradfordonavon.com.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Refined layout and redesigned and polished appearance and page structure.</info>
+	</site>
+	<site show="no">
+		<url>jonscards.co.uk</url>
+		<title>Jon's Cards UK</title>
+		<shortTitle>Jon's Cards</shortTitle>
+		<image>images/websites/jonscards.co.uk.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Designed and built from scratch including custom product pages and cart.</info>
+	</site>
+	<site show="no">
+		<url>rocketchilli.com</url>
+		<title>Rocket Chilli Web Design</title>
+		<shortTitle>Rocket Chilli</shortTitle>
+		<image>images/websites/rocketchilli.com.png</image>
+		<role>Designer, developer and maintenance</role>
+		<info>Goes without saying really...</info>
+	</site>
+</websites>
