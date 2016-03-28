@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /analytics/
+Sitemap: http://www.rocketchilli.co.uk/sitemap.xml
