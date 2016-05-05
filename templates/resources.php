@@ -4,6 +4,6 @@
 <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
 <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
 <link rel="stylesheet" type="text/css" href="styles/common.css"/>
-<script src="script/jquery-2.2.3.min.js"></script>
+<script src="libraries/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="script/common.js"></script>
 <meta name="theme-color" content="#384447"/>
