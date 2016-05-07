@@ -1,3 +1,49 @@
+$colours: (
+	"red": #f3524a,
+	"navy": #384447,
+	"purple": #5c3745,
+	"blue": #bde1ea,
+	"grey": #e3dee4,
+	"white": #fff
+);
+
 body {
-	background: red;
+	font-size: 16px;
+}
+%full-width {
+	max-width: 100%;
+	width: 1000px;
+	margin: 0 auto;
+}
+header {
+	@extend %full-width;
+	background: map-get($colours, "red");
+	height: 1em;
+	position: fixed;
+	top: 0;
+	overflow: visible;
+	.chilli-tab {
+		$width: 4em;
+		width: $width;
+		height: $width;
+		background: map-get($colours, "red");
+		position: absolute;
+		left: 15%;
+		top: 50%;
+		border-radius: 0 0 2em 2em;
+		a {
+			display: block;
+			background-color: map-get($colours, "grey");
+			border-radius: 50%;
+			width: 75%;
+			height: 75%;
+			margin: 12.5%;
+		}
+		img {
+			width: 70%;
+			margin: 15%;
+			position: relative;
+			top: 5%;
+		}
+	}
 }
