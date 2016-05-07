@@ -4,24 +4,58 @@ $colours: (
 	"purple": #5c3745,
 	"blue": #bde1ea,
 	"grey": #e3dee4,
-	"white": #fff
+	"white": #fff,
+	"shadow": rgba(2, 2, 2, 0.1)
 );
+$shadow: 0 0.2rem 0.2rem 0.2rem map-get($colours, "shadow");
+
+%full-width {
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto;
+}
 
 body {
 	font-size: 16px;
 }
-%full-width {
-	max-width: 100%;
-	width: 1000px;
-	margin: 0 auto;
+h1 {
+	font-family: "Quicksand", sans-serif;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0.4em;
 }
+p {
+	font-family: "Verdana", sans-serif;
+	font-size: 108%;
+}
+button {
+	font-family: "Quicksand", sans-serif;
+	background: map-get($colours, "red");
+	color: map-get($colours, "grey");
+	border: 0.2em solid map-get($colours, "grey");
+	padding: 0.5em 1.5em;
+	white-space: nowrap;
+	border-radius: 2em;
+	box-shadow: $shadow;
+	cursor: pointer;
+}
+p + button {
+	margin-top: 1em;
+}
+.centred {
+	text-align: center;
+}
+
 header {
 	@extend %full-width;
 	background: map-get($colours, "red");
 	height: 1em;
 	position: fixed;
 	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
 	overflow: visible;
+	z-index: 1;
 	.chilli-tab {
 		$width: 4em;
 		width: $width;
@@ -44,6 +78,41 @@ header {
 			margin: 15%;
 			position: relative;
 			top: 5%;
+		}
+	}
+}
+
+main {
+	@extend %full-width;
+}
+section {
+	height: 35em;
+	position: relative;
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		text-align: center;
+	}
+	// section-specific styles
+	&:nth-child(1) {
+		margin-top: 1em;
+		background: map-get($colours, "navy");
+		color: map-get($colours, "grey");
+		h1 {
+			max-width: 10em;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0.9em;
+		}
+		.hero-ghost {
+			position: absolute;
+			top: 8%;
+			left: 7.5%;
+			opacity: 0.2;
+			z-index: -1;
 		}
 	}
 }

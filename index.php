@@ -11,6 +11,17 @@
 <body>
 	<?php include("templates/tracking.php") ?>
 	<?php include("templates/header.php") ?>
+	<main>
+		<section id="top">
+			<div class="container">
+				<img src="images/main-logo.svg" alt="Rocket Chilli"/>
+				<h1>Websites that are made just for you</h1>
+				<p>Elegant, functional web design</p>
+				<button>Find out more</button>
+				<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
+			</div>
+		</section>
+	</main>
 	<?php include("templates/footer.php") ?>
 </body>
 </html>
