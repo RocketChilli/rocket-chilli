@@ -13,6 +13,7 @@
 	<?php include("templates/header.php") ?>
 	<main>
 		<section id="top">
+			<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
 			<div class="container">
 				<img src="images/main-logo.svg" alt="Rocket Chilli"/>
 				<h1>Websites that are made just for you</h1>
