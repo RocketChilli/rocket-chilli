@@ -5,14 +5,42 @@ $colours: (
 	"blue": #bde1ea,
 	"grey": #e3dee4,
 	"white": #fff,
-	"shadow": rgba(2, 2, 2, 0.1)
+	"shadow": rgba(0, 0, 0, 0.2)
 );
-$shadow: 0 0.2rem 0.2rem 0.2rem map-get($colours, "shadow");
+$shadow: 0 0.4rem 0.4rem -0.2rem map-get($colours, "shadow");
 
 %full-width {
 	width: 1000px;
 	max-width: 100%;
 	margin: 0 auto;
+}
+%navy {
+	background: map-get($colours, "navy");
+	color: map-get($colours, "grey");
+	hr {
+		background: map-get($colours, "grey");
+	}
+}
+%grey {
+	background: map-get($colours, "grey");
+	color: map-get($colours, "purple");
+	hr {
+		background: map-get($colours, "purple");
+	}
+}
+%red {
+	background: map-get($colours, "red");
+	color: map-get($colours, "white");
+	hr {
+		background: map-get($colours, "white");
+	}
+}
+%white {
+	background: map-get($colours, "white");
+	color: map-get($colours, "purple");
+	hr {
+		background: map-get($colours, "purple");
+	}
 }
 
 body {
@@ -28,12 +56,18 @@ p {
 	font-family: "Verdana", sans-serif;
 	font-size: 108%;
 }
+hr {
+	height: 1px;
+	width: 80%;
+	border: 0;
+}
 button {
 	font-family: "Quicksand", sans-serif;
 	background: map-get($colours, "red");
 	color: map-get($colours, "grey");
 	border: 0.2em solid map-get($colours, "grey");
 	padding: 0.5em 1.5em;
+	min-width: 10em;
 	white-space: nowrap;
 	border-radius: 2em;
 	box-shadow: $shadow;
@@ -81,6 +115,18 @@ header {
 		}
 	}
 }
+footer {
+	@extend %full-width;
+	@extend %red;
+	background: map-get($colours, "red");
+	color: map-get($colours, "white");
+	font-family: "Verdana", sans-serif;
+	font-size: 80%;
+	padding: 0.5em 0.8em;
+	padding-top: 3.5em;
+	box-sizing: border-box;
+	text-align: right;
+}
 
 main {
 	@extend %full-width;
@@ -93,7 +139,7 @@ section {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 80%;
+		width: 60%;
 		text-align: center;
 	}
 	// section-specific styles
@@ -101,6 +147,7 @@ section {
 		margin-top: 1em;
 		background: map-get($colours, "navy");
 		color: map-get($colours, "grey");
+		position: relative;
 		h1 {
 			max-width: 10em;
 			margin-left: auto;
@@ -109,10 +156,21 @@ section {
 		}
 		.hero-ghost {
 			position: absolute;
-			top: 8%;
-			left: 7.5%;
+			top: 25%;
+			left: 15%;
 			opacity: 0.2;
-			z-index: -1;
 		}
+	}
+	&:nth-child(2) {
+		@extend %white;
+	}
+	&:nth-child(3) {
+		@extend %grey;
+	}
+	&:nth-child(4) {
+		@extend %navy;
+	}
+	&:nth-child(5) {
+		@extend %white;
 	}
 }
