@@ -119,9 +119,23 @@ main {
 	left: 50%;
 	transform: translate(-100%, -50%);
 	opacity: 0.2;
-	max-width: 90%;
+	max-width: 80%;
+	width: 20em;
 }
 .logo {
 	max-width: 100%;
 	width: 30em;
+}
+
+@media all and (min-width: 50em) {
+	body {
+		font-size: 110%;
+	}
+	.hero-ghost {
+		width: 25em;
+	}
+}@media all and (min-width: 70em) {
+	body {
+		font-size: 121%;
+	}
 }
