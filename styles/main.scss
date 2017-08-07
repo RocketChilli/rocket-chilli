@@ -11,6 +11,7 @@ $colours: (
 	"shadow": rgba(0, 0, 0, 0.2)
 );
 $shadow: 0 0.4rem 0.4rem -0.2rem map-get($colours, "shadow");
+$hover-time: 0.5s;
 
 %full-width {
 	width: 100%;
@@ -52,6 +53,10 @@ button {
 	border-radius: 2em;
 	box-shadow: $shadow;
 	cursor: pointer;
+	transition: border-color $hover-time;
+	&:hover {
+		border-color: map-get($colours, "red");
+	}
 }
 a {
 	color: inherit;
@@ -60,6 +65,10 @@ a {
 .footnote {
 	font-size: 75%;
 	opacity: 0.2;
+	transition: opacity $hover-time;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 header {
