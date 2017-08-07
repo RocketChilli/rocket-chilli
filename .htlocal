@@ -1,6 +1,0 @@
-php_value date.timezone "Europe/London"
-
-RewriteEngine On
-RewriteBase /rocketchilli.com/
-
-RewriteRule ^styles/([^/]+\.scss) styles/scss.php/$1 [NC,L]

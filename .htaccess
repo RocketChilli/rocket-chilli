@@ -6,3 +6,6 @@ RewriteBase /
 # remove www subdomain
 RewriteCond %{HTTP_HOST} ^www\.rocketchilli\.com [NC]
 RewriteRule	^(.*)$ http://rocketchilli.com/$1 [R=301,NC,L,QSA]
+
+# compile stylesheets using PHPSCSS
+RewriteRule ^styles/([^/]+\.scss) styles/scss.php/$1 [NC,L]
