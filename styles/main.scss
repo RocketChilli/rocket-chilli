@@ -54,7 +54,7 @@ button {
 	cursor: pointer;
 }
 .footnote {
-	font-size: 70%;
+	font-size: 75%;
 	opacity: 0.2;
 }
 
@@ -76,7 +76,7 @@ header {
 		position: absolute;
 		left: 15%;
 		top: 50%;
-		border-radius: 0 0 2em 2em;
+		border-radius: 0 0 50% 50%;
 		a {
 			display: block;
 			background-color: map-get($colours, "grey");
@@ -95,8 +95,7 @@ header {
 }
 footer {
 	@extend %full-width;
-	font-family: "Arial", sans-serif;
-	font-size: 70%;
+	font-size: 60%;
 	padding: 1em 0.8em;
 	box-sizing: border-box;
 	text-align: center;
