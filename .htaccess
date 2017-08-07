@@ -4,11 +4,17 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
 RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
 # Force HTTPS
-RewriteCond %{HTTP_HOST} ^greenfinchgardening [NC]
+RewriteCond %{HTTP_HOST} ^rocketchilli [NC]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # Serve minified SASS files from SASSPHP compiler
 RewriteRule ^styles/([^/]+\.scss) styles/scss.php?p=$1&min [NC,L]
+
+# Forward old urls
+RewriteCond %{THE_REQUEST} /(info|websites|about|index)\.php [NC]
+RewriteRule . / [R=301,NC,L]
+RewriteRule ^contact\.php /contact [R=301,NC,L]
+RewriteRule ^contact /index.php [NC,L]
 
 <IfModule mod_headers.c>
 	# Cache static assets for one year
