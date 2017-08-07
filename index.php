@@ -18,7 +18,7 @@
 			<h1>Scientist, engineer,<br/>designer, nerd.</h1>
 			<p>I do stuff, including* websites</p>
 			<button>Contact me</button>
-			<p class="footnote">* but not limited to</p>
+			<p class="footnote">* <a href="http://github.com/JonathanHolvey">but not limited to</a></p>
 		</div>
 	</main>
 	<?php include("templates/footer.php") ?>
