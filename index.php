@@ -17,7 +17,7 @@
 			<img class="logo" src="images/main-logo.svg" alt="Rocket Chilli"/>
 			<h1>Scientist, engineer,<br/>designer, nerd.</h1>
 			<p>I do stuff, including* websites</p>
-			<form action="mailto:contact@rocketchilli.com"><button type="submit">Contact me</button></form>
+			<a href="mailto:contact@rocketchilli.com"><button type="submit">Contact me</button></a>
 			<p class="footnote">* <a href="http://github.com/JonathanHolvey">but not limited to</a></p>
 		</div>
 	</main>
