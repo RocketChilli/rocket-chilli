@@ -6,6 +6,5 @@
 <link rel="stylesheet" type="text/css" href="libraries/normalize-4.1.1.min.css"/>
 <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
 <link rel="stylesheet" type="text/css" href="styles/common.scss"/>
-<script src="libraries/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="script/common.js"></script>
 <meta name="theme-color" content="#384447"/>
