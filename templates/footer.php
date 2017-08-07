@@ -1,1 +1,1 @@
-<footer>Copyright Rocket Chilli <?= date("Y") ?> - All rights reserved</footer>
+<footer>Copyright <?= date("Y") ?> - All rights reserved</footer>

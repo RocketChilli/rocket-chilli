@@ -14,10 +14,11 @@
 	<main>
 		<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
 		<div class="container">
-			<img src="images/main-logo.svg" alt="Rocket Chilli"/>
-			<h1>Scientist, engineer, designer, nerd.</h1>
-			<p>I do stuff, including (but not limited to) websites</p>
+			<img class="logo" src="images/main-logo.svg" alt="Rocket Chilli"/>
+			<h1>Scientist, engineer,<br/>designer, nerd.</h1>
+			<p>I do stuff, including* websites</p>
 			<button>Contact me</button>
+			<p class="footnote">* but not limited to</p>
 		</div>
 	</main>
 	<?php include("templates/footer.php") ?>

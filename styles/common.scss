@@ -25,14 +25,13 @@ body {
 	@extend %navy;
 	font-size: 16px;
 	font-family: "Quicksand", "Arial", sans-serif;
+	hyphens: none;
 }
 h1 {
 	font-weight: normal;
 	text-align: center;
 	margin-bottom: 0.4em;
-}
-p {
-	font-size: 108%;
+	font-size: 170%;
 }
 hr {
 	height: 1px;
@@ -43,24 +42,23 @@ button {
 	background: map-get($colours, "red");
 	color: map-get($colours, "grey");
 	border: 0.2em solid map-get($colours, "grey");
-	padding: 0.5em 1.5em;
-	min-width: 11em;
+	margin: 1em auto;
+	padding: 0.4em 1.5em;
+	min-width: 10em;
 	white-space: nowrap;
 	border-radius: 2em;
 	box-shadow: $shadow;
 	cursor: pointer;
 }
-p + button {
-	margin-top: 1em;
-}
-.centred {
-	text-align: center;
+.footnote {
+	font-size: 70%;
+	opacity: 0.2;
 }
 
 header {
 	@extend %full-width;
 	background: map-get($colours, "red");
-	height: 1em;
+	height: 0.7em;
 	position: fixed;
 	top: 0;
 	left: 50%;
@@ -68,7 +66,7 @@ header {
 	overflow: visible;
 	z-index: 1;
 	.chilli-tab {
-		$width: 4em;
+		$width: 3em;
 		width: $width;
 		height: $width;
 		background: map-get($colours, "red");
@@ -96,7 +94,6 @@ footer {
 	@extend %full-width;
 	font-family: "Arial", sans-serif;
 	font-size: 70%;
-	text-transform: uppercase;
 	padding: 1em 0.8em;
 	box-sizing: border-box;
 	text-align: center;
@@ -113,12 +110,18 @@ main {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 60%;
+	min-width: 80%;
 	text-align: center;
 }
 .hero-ghost {
 	position: absolute;
-	top: 25%;
-	left: 15%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-100%, -50%);
 	opacity: 0.2;
+	max-width: 90%;
+}
+.logo {
+	max-width: 100%;
+	width: 30em;
 }
