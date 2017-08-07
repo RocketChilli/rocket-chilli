@@ -12,40 +12,13 @@
 	<?php include("templates/tracking.php") ?>
 	<?php include("templates/header.php") ?>
 	<main>
-		<section id="top">
-			<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
-			<div class="container">
-				<img src="images/main-logo.svg" alt="Rocket Chilli"/>
-				<h1>Websites that are made just for you</h1>
-				<p>Elegant, functional web design</p>
-				<button>Find out more</button>
-			</div>
-		</section>
-		<section id="me">
-			<div class="container">
-				<h1>Who am I?</h1><hr/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum purus leo id eleifend lorem ultrices sed. Aliquam lacinia euismod quam at sollicitudin.</p>
-			</div>
-		</section>
-		<section id="tech">
-			<div class="container">
-				<h1>What I can do</h1><hr/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum purus leo id eleifend lorem ultrices sed. Aliquam lacinia euismod quam at sollicitudin.</p>
-			</div>
-		</section>
-		<section id="projects">
-			<div class="container">
-				<h1>Projects I've worked on</h1><hr/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum purus leo id eleifend lorem ultrices sed. Aliquam lacinia euismod quam at sollicitudin.</p>
-			</div>
-		</section>
-		<section id="contact">
-			<div class="container">
-				<h1>Send me a message</h1><hr/>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum purus leo id eleifend lorem ultrices sed. Aliquam lacinia euismod quam at sollicitudin.</p>
-				<button>Send</button>
-			</div>
-		</section>
+		<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
+		<div class="container">
+			<img src="images/main-logo.svg" alt="Rocket Chilli"/>
+			<h1>Scientist, engineer, designer, nerd.</h1>
+			<p>I do stuff, including (but not limited to) websites</p>
+			<button>Contact me</button>
+		</div>
 	</main>
 	<?php include("templates/footer.php") ?>
 </body>

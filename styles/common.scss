@@ -10,8 +10,7 @@ $colours: (
 $shadow: 0 0.4rem 0.4rem -0.2rem map-get($colours, "shadow");
 
 %full-width {
-	width: 1000px;
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
 }
 %navy {
@@ -21,39 +20,18 @@ $shadow: 0 0.4rem 0.4rem -0.2rem map-get($colours, "shadow");
 		background: map-get($colours, "grey");
 	}
 }
-%grey {
-	background: map-get($colours, "grey");
-	color: map-get($colours, "purple");
-	hr {
-		background: map-get($colours, "purple");
-	}
-}
-%red {
-	background: map-get($colours, "red");
-	color: map-get($colours, "white");
-	hr {
-		background: map-get($colours, "white");
-	}
-}
-%white {
-	background: map-get($colours, "white");
-	color: map-get($colours, "purple");
-	hr {
-		background: map-get($colours, "purple");
-	}
-}
 
 body {
+	@extend %navy;
 	font-size: 16px;
+	font-family: "Quicksand", "Arial", sans-serif;
 }
 h1 {
-	font-family: "Quicksand", sans-serif;
 	font-weight: normal;
 	text-align: center;
 	margin-bottom: 0.4em;
 }
 p {
-	font-family: "Verdana", sans-serif;
 	font-size: 108%;
 }
 hr {
@@ -62,12 +40,11 @@ hr {
 	border: 0;
 }
 button {
-	font-family: "Quicksand", sans-serif;
 	background: map-get($colours, "red");
 	color: map-get($colours, "grey");
 	border: 0.2em solid map-get($colours, "grey");
 	padding: 0.5em 1.5em;
-	min-width: 10em;
+	min-width: 11em;
 	white-space: nowrap;
 	border-radius: 2em;
 	box-shadow: $shadow;
@@ -117,60 +94,31 @@ header {
 }
 footer {
 	@extend %full-width;
-	@extend %red;
-	background: map-get($colours, "red");
-	color: map-get($colours, "white");
-	font-family: "Verdana", sans-serif;
-	font-size: 80%;
-	padding: 0.5em 0.8em;
-	padding-top: 3.5em;
+	font-family: "Arial", sans-serif;
+	font-size: 70%;
+	text-transform: uppercase;
+	padding: 1em 0.8em;
 	box-sizing: border-box;
-	text-align: right;
+	text-align: center;
+	opacity: 0.2;
+	position: absolute;
+	bottom: 0;
 }
 
 main {
 	@extend %full-width;
 }
-section {
-	height: 35em;
-	position: relative;
-	.container {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 60%;
-		text-align: center;
-	}
-	// section-specific styles
-	&:nth-child(1) {
-		margin-top: 1em;
-		background: map-get($colours, "navy");
-		color: map-get($colours, "grey");
-		position: relative;
-		h1 {
-			max-width: 10em;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 0.9em;
-		}
-		.hero-ghost {
-			position: absolute;
-			top: 25%;
-			left: 15%;
-			opacity: 0.2;
-		}
-	}
-	&:nth-child(2) {
-		@extend %white;
-	}
-	&:nth-child(3) {
-		@extend %grey;
-	}
-	&:nth-child(4) {
-		@extend %navy;
-	}
-	&:nth-child(5) {
-		@extend %white;
-	}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	text-align: center;
+}
+.hero-ghost {
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	opacity: 0.2;
 }
