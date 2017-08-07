@@ -3,8 +3,8 @@
 <head>
 	<title>Rocket Chilli</title>
 	<meta charset="UTF-8"/>
-	<meta name="description" content=""/>
-	<meta name="keywords" content=""/>
+	<meta name="description" content="Scientist, engineer, designer, nerd."/>
+	<meta name="keywords" content="web design, development, programming"/>
 	<meta name="google-site-verification" content="tpup9wO6weLiHt7Y3ZaJ98X-CeX4ZoxB0xnwDIJj0Vc"/>
 	<?php include("templates/resources.php") ?>
 </head>
