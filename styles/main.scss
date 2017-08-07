@@ -1,0 +1,147 @@
+@import "reset";
+@import "fonts";
+
+$colours: (
+	"red": #f3524a,
+	"navy": #384447,
+	"purple": #5c3745,
+	"blue": #bde1ea,
+	"grey": #e3dee4,
+	"white": #fff,
+	"shadow": rgba(0, 0, 0, 0.2)
+);
+$shadow: 0 0.4rem 0.4rem -0.2rem map-get($colours, "shadow");
+
+%full-width {
+	width: 100%;
+	margin: 0 auto;
+}
+%navy {
+	background: map-get($colours, "navy");
+	color: map-get($colours, "grey");
+	hr {
+		background: map-get($colours, "grey");
+	}
+}
+
+body {
+	@extend %navy;
+	font-size: 16px;
+	font-family: "Quicksand", "Arial", sans-serif;
+	hyphens: none;
+}
+h1 {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0.4em;
+	font-size: 170%;
+}
+hr {
+	height: 1px;
+	width: 80%;
+	border: 0;
+}
+button {
+	background: map-get($colours, "red");
+	color: map-get($colours, "grey");
+	border: 0.2em solid map-get($colours, "grey");
+	margin: 1em auto;
+	padding: 0.4em 1.5em;
+	min-width: 10em;
+	white-space: nowrap;
+	border-radius: 2em;
+	box-shadow: $shadow;
+	cursor: pointer;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.footnote {
+	font-size: 75%;
+	opacity: 0.2;
+}
+
+header {
+	@extend %full-width;
+	background: map-get($colours, "red");
+	height: 0.7em;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	overflow: visible;
+	z-index: 1;
+	.chilli-tab {
+		$width: 3em;
+		width: $width;
+		height: $width;
+		background: map-get($colours, "red");
+		position: absolute;
+		left: 15%;
+		top: 50%;
+		border-radius: 0 0 50% 50%;
+		a {
+			display: block;
+			background-color: map-get($colours, "grey");
+			border-radius: 50%;
+			width: 75%;
+			height: 75%;
+			margin: 12.5%;
+		}
+		img {
+			width: 70%;
+			margin: 15%;
+			position: relative;
+			top: 5%;
+		}
+	}
+}
+footer {
+	@extend %full-width;
+	font-size: 60%;
+	padding: 1em 0.8em;
+	box-sizing: border-box;
+	text-align: center;
+	opacity: 0.2;
+	position: absolute;
+	bottom: 0;
+}
+
+main {
+	@extend %full-width;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 80%;
+	text-align: center;
+}
+.hero-ghost {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-100%, -50%);
+	opacity: 0.2;
+	max-width: 80%;
+	width: 20em;
+}
+.logo {
+	max-width: 100%;
+	width: 30em;
+}
+
+@media all and (min-width: 50em) {
+	body {
+		font-size: 110%;
+	}
+	.hero-ghost {
+		width: 25em;
+	}
+}@media all and (min-width: 70em) {
+	body {
+		font-size: 121%;
+	}
+}
