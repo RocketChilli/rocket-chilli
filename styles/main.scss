@@ -61,6 +61,7 @@ button {
 	cursor: pointer;
 	transition: border-color $hover-time;
 	&:hover {
+		box-shadow: none;
 		border-color: map-get($colours, "red");
 	}
 }
