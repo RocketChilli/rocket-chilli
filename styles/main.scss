@@ -25,11 +25,17 @@ $hover-time: 0.5s;
 	}
 }
 
+html,
+body {
+	height: 100%;
+}
 body {
 	@extend %navy;
 	font-size: 16px;
 	font-family: "Quicksand", "Arial", sans-serif;
 	hyphens: none;
+	min-height: 26rem;
+	position: relative;
 }
 h1 {
 	font-weight: normal;
@@ -142,15 +148,28 @@ main {
 	width: 30em;
 }
 
-@media all and (min-width: 50em) {
+@media screen and (min-width: 50rem) {
 	body {
 		font-size: 110%;
 	}
 	.hero-ghost {
 		width: 25em;
 	}
-}@media all and (min-width: 70em) {
+}
+@media screen and (min-width: 70rem) {
 	body {
 		font-size: 121%;
+	}
+}
+@media screen and (max-height: 35rem) {
+	body {
+		font-size: 90%;
+	}
+}
+@media screen and (max-height: 26rem) {
+	.container {
+		position: static;
+		transform: none;
+		padding: 1em;
 	}
 }
