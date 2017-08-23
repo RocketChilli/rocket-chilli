@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /develop
-Sitemap: http://www.rocketchilli.co.uk/sitemap.xml
