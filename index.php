@@ -12,7 +12,7 @@
 	<?php include("templates/tracking.php") ?>
 	<?php include("templates/header.php") ?>
 	<main>
-		<img class="hero-ghost" src="images/big-logo.svg" alt="Big Chilli"/>
+		<img class="hero-ghost" src="images/big-logo.svg" alt=""/>
 		<div class="container">
 			<img class="logo" src="images/main-logo.svg" alt="Rocket Chilli"/>
 			<h1>Scientist, engineer,<br/>designer, nerd.</h1>
