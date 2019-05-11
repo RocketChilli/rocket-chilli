@@ -6,7 +6,8 @@ networks:
 
 services:
   web:
-    image: httpd:2.4-alpine
+    build:
+      context: ./
     container_name: rocketchilli-web
     networks:
       - default

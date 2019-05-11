@@ -1,0 +1,27 @@
+{
+  "name": "rocketchilli.com",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocketChilli/rocketchilli.com.git"
+  },
+  "author": "Jonathan Holvey",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RocketChilli/rocketchilli.com/issues"
+  },
+  "homepage": "https://github.com/RocketChilli/rocketchilli.com#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass-tilde-importer": "^1.0.2",
+    "reset-css": "^4.0.1"
+  }
+}
