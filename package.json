@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "build": "gulp prod"
   },
   "repository": {
     "type": "git",

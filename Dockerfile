@@ -4,6 +4,6 @@ RUN apk add --update nodejs-npm
 
 WORKDIR /usr/local/apache2/htdocs
 COPY package*.json ./
-RUN npm install
+RUN npm install --prod && npm run build
 
 COPY * ./
