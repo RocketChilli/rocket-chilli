@@ -1,1 +1,0 @@
-<footer>Copyright <?= date("Y") ?> - All rights reserved</footer>
