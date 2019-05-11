@@ -29,7 +29,7 @@ gulp.task('reload', (done) => {
 gulp.task('watch', () => {
   livereload.listen()
   gulp.watch('scss/**/*.scss', { cwd: `${sourcePath}/` }, gulp.series('sass-dev'))
-  gulp.watch('**/*', { cwd: `${sourcePath}/` }, gulp.series('reload'))
+  gulp.watch('*.html', { cwd: '.' }, gulp.series('reload'))
 })
 
 // Build SCSS for production
