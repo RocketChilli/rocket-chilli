@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /
+
+# Remove www subdomain
+RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^(staging\.)?rocketchilli [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Forward old urls
+RewriteCond %{THE_REQUEST} /(info|websites|about|index)\.php [NC]
+RewriteRule . / [R=301,NC,L]
+RewriteRule ^contact\.php /contact [R=301,NC,L]
+RewriteRule ^contact /index.php [NC,L]
+
+# Cache static assets for one year
+<filesMatch ".(jpg|jpeg|png|gif|ico|svg)$">
+	Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# Cache CSS and JavaScript for one week
+<filesMatch ".(css|js)$">
+	Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+
+# Enable output compression
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript image/svg+xml
