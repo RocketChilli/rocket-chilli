@@ -3,6 +3,7 @@ version: '3.7'
 networks:
   default:
     name: localdev
+    external: true
 
 services:
   web:
@@ -12,7 +13,7 @@ services:
     networks:
       - default
     volumes:
-      - ./:/usr/local/apache2/htdocs
+      - ./web:/opt/app
     ports:
       - 80
       - 35729:35729

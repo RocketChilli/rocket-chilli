@@ -13,16 +13,11 @@
   },
   "author": "Jonathan Holvey",
   "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/RocketChilli/rocketchilli.com/issues"
-  },
-  "homepage": "https://github.com/RocketChilli/rocketchilli.com#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.1",
     "gulp-sass": "^4.0.2",
-    "node-sass-tilde-importer": "^1.0.2",
-    "reset-css": "^4.0.1"
-  }
+    "node-sass-tilde-importer": "^1.0.2"
+  },
+  "devDependencies": {}
 }
