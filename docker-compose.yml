@@ -14,8 +14,8 @@ services:
       - default
     volumes:
       - ./web:/opt/app
+      - /opt/app/node_modules
     ports:
       - 80
-      - 35729:35729
     environment:
       VIRTUAL_HOST: local.rocketchilli.com
