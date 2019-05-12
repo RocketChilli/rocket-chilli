@@ -1,7 +1,7 @@
 {
   "name": "rocketchilli.com",
   "version": "2.0.0",
-  "description": "",
+  "description": "Single page website for Rocket Chilli",
   "main": "index.html",
   "scripts": {
     "dev": "gulp dev",
