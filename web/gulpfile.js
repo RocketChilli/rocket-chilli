@@ -45,5 +45,5 @@ gulp.task('sass', () => (
     .pipe(gulp.dest(dest.css))
 ))
 
-gulp.task('default', gulp.series('sass-dev', 'watch'))
-gulp.task('prod', gulp.series('sass'))
+gulp.task('dev', gulp.series('sass-dev', 'watch'))
+gulp.task('default', gulp.series('sass'))
