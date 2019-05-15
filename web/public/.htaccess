@@ -1,14 +1,6 @@
 RewriteEngine On
 RewriteBase /
 
-# Remove www subdomain
-RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
-RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
-# Force HTTPS
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^(staging\.)?rocketchilli [NC]
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 # Forward old urls
 RewriteCond %{THE_REQUEST} /(info|websites|about|index)\.php [NC]
 RewriteRule . / [R=301,NC,L]
