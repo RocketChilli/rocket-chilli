@@ -40,8 +40,8 @@ gulp.task('watch', () => {
 
 // Build SCSS for production
 gulp.task('sass', () => (
-  gulp.src(source.scss)
-    .pipe(sass({importer: tildeImporter})) 
+  gulp.src(`${source.scss}/main.scss`)
+    .pipe(sass({ importer: tildeImporter })) 
     .pipe(gulp.dest(dest.css))
 ))
 
