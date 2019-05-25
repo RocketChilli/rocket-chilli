@@ -1,0 +1,23 @@
+{
+  "name": "rocketchilli.com",
+  "version": "2.0.0",
+  "description": "Single page website for Rocket Chilli",
+  "main": "index.html",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocketChilli/rocketchilli.com.git"
+  },
+  "author": "Jonathan Holvey",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass-tilde-importer": "^1.0.2"
+  },
+  "devDependencies": {}
+}

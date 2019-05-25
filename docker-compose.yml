@@ -1,0 +1,21 @@
+version: '3.7'
+
+networks:
+  default:
+    name: localdev
+    external: true
+
+services:
+  web:
+    build:
+      context: ./
+    container_name: rocketchilli-web
+    networks:
+      - default
+    volumes:
+      - ./web:/opt/app
+      - /opt/app/node_modules
+    ports:
+      - 80
+    environment:
+      VIRTUAL_HOST: local.rocketchilli.com
