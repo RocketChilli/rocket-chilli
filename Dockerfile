@@ -1,6 +1,6 @@
 FROM httpd:2.4-alpine
 
-RUN apk add --update nodejs-npm
+RUN apk add --update nodejs npm
 
 # Create symlink for public server root
 WORKDIR /opt/app

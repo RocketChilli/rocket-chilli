@@ -15,9 +15,9 @@
   "license": "UNLICENSED",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-livereload": "^4.0.1",
-    "gulp-sass": "^4.0.2",
-    "node-sass-tilde-importer": "^1.0.2"
-  },
-  "devDependencies": {}
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "sass": "^1.49.9"
+  }
 }
