@@ -1,6 +1,6 @@
 {
   "name": "rocketchilli.com",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Single page website for Rocket Chilli",
   "main": "index.html",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "Jonathan Holvey",
   "license": "UNLICENSED",
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "node-sass-tilde-importer": "^1.0.2",
